@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-tamil: 'Noto Sans Tamil', sans-serif;
+  --font-devanagari: 'Noto Sans Devanagari', sans-serif;
+  --font-telugu: 'Noto Sans Telugu', sans-serif;
+  --font-kannada: 'Noto Sans Kannada', sans-serif;
+  --font-malayalam: 'Noto Sans Malayalam', sans-serif;
+  --font-bengali: 'Noto Sans Bengali', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #0a0f1e;
+  color: #e2e8f0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.lang-ta { font-family: var(--font-tamil); }
+.lang-hi { font-family: var(--font-devanagari); }
+.lang-te { font-family: var(--font-telugu); }
+.lang-kn { font-family: var(--font-kannada); }
+.lang-ml { font-family: var(--font-malayalam); }
+.lang-bn { font-family: var(--font-bengali); }
+
+/* Map styles */
+.leaflet-container { background: #0d1b2a !important; }
+.leaflet-tile { filter: brightness(0.7) saturate(0.8); }
+
+/* Threat level colours */
+.threat-critical { color: #ef4444; }
+.threat-high     { color: #f97316; }
+.threat-medium   { color: #eab308; }
+.threat-low      { color: #22c55e; }
+.threat-safe     { color: #3b82f6; }
+
+.threat-bg-critical { background: rgba(239,68,68,0.15); border-left: 3px solid #ef4444; }
+.threat-bg-high     { background: rgba(249,115,22,0.15); border-left: 3px solid #f97316; }
+.threat-bg-medium   { background: rgba(234,179,8,0.15);  border-left: 3px solid #eab308; }
+.threat-bg-low      { background: rgba(34,197,94,0.15);  border-left: 3px solid #22c55e; }
+.threat-bg-safe     { background: rgba(59,130,246,0.15); border-left: 3px solid #3b82f6; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #0a0f1e; }
+::-webkit-scrollbar-thumb { background: #1e3a5f; border-radius: 2px; }
+
+/* Pulse animation for live indicator */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(1.4); }
+}
+.pulse-dot { animation: pulse-dot 1.5s infinite; }
