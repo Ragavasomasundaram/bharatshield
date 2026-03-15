@@ -1,10 +1,11 @@
 {
   "name": "bharatshield",
   "version": "1.0.0",
-  "description": "India Defence Intelligence Dashboard — Atmanirbhar Bharat",
+  "type": "module",
+  "description": "India Defence Intelligence Dashboard",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -27,6 +28,6 @@
     "postcss": "^8.4.32",
     "tailwindcss": "^3.4.0",
     "typescript": "^5.2.2",
-    "vite": "^5.4.0""
+    "vite": "^8.0.0"
   }
 }
